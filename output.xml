@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190327 10:44:47.814" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\Luiz Bavaresco\PycharmProjects\ROBOT\LoginInvalido.robot" id="s1" name="LoginInvalido">
+<test id="s1-t1" name="Teste01">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190327 10:44:48.253" level="INFO">Opening browser 'chrome' to base url 'https://www.movida.com.br/'.</msg>
+<status status="PASS" endtime="20190327 10:45:18.544" starttime="20190327 10:44:48.253"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@class='btn dropdown-toggle hidden-sm hidden-xs']</arg>
+</arguments>
+<msg timestamp="20190327 10:45:18.546" level="INFO">Clicking element 'xpath=//a[@class='btn dropdown-toggle hidden-sm hidden-xs']'.</msg>
+<status status="PASS" endtime="20190327 10:45:18.698" starttime="20190327 10:45:18.545"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@name="cpf"]</arg>
+</arguments>
+<status status="PASS" endtime="20190327 10:45:18.998" starttime="20190327 10:45:18.699"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@name="cpf"]</arg>
+<arg>${CPF}</arg>
+</arguments>
+<msg timestamp="20190327 10:45:19.000" level="INFO">Typing text '05834877931' into text field 'xpath=//*[@name="cpf"]'.</msg>
+<status status="PASS" endtime="20190327 10:45:19.392" starttime="20190327 10:45:18.999"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@name="senha"]</arg>
+<arg>${Senha}</arg>
+</arguments>
+<msg timestamp="20190327 10:45:19.393" level="INFO">Typing text '123' into text field 'xpath=//*[@name="senha"]'.</msg>
+<status status="PASS" endtime="20190327 10:45:19.576" starttime="20190327 10:45:19.392"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="login-button"]</arg>
+</arguments>
+<msg timestamp="20190327 10:45:19.577" level="INFO">Clicking button 'xpath=//*[@id="login-button"]'.</msg>
+<status status="PASS" endtime="20190327 10:45:19.834" starttime="20190327 10:45:19.577"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//p[contains(text(),'Usuário ou senha inválido(s)!')]</arg>
+</arguments>
+<status status="PASS" endtime="20190327 10:45:22.452" starttime="20190327 10:45:19.841"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190327 10:45:25.086" starttime="20190327 10:45:22.479"></status>
+</kw>
+<status status="PASS" endtime="20190327 10:45:25.086" critical="yes" starttime="20190327 10:44:48.252"></status>
+</test>
+<status status="PASS" endtime="20190327 10:45:25.089" starttime="20190327 10:44:47.819"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="LoginInvalido" pass="1">LoginInvalido</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
